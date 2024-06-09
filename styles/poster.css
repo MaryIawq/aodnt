@@ -1,0 +1,284 @@
+.scroll-content {
+    transition: transform 0.3s ease-in-out;
+}
+
+.scroll-item {
+    position: relative;
+    height: 430px;
+    width: 270px;
+    margin-right: 30px;
+    align-items: flex-start;
+}
+
+.poster-item-content {
+    position: relative;
+    height: 436px;
+    width: 270px;
+    background: white;
+    clip-path: polygon(100% 0, 100% calc(100% - 122px), calc(100% - 10px) calc(100% - 96px), 100% calc(100% - 75px), 100% 100%, 0 100%, 0 0);
+}
+
+.poster-item-backside {
+    height: 436px;
+    width: 270px;
+    background-color: royalblue;
+}
+
+.poster-top {
+    position: absolute;
+    top: 28px;
+    width: 270px;
+}
+
+.poster-bottom {
+    position: absolute;
+    bottom: 28px;
+    width: 270px;
+}
+
+.poster-age {
+    font-family: sans-serif;
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 45px;
+    min-height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f84435;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 19px 100%, 0% calc(100% - 7px));
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.poster-title {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    max-height: min-content;
+    margin: 25px 40px 0 24px;
+}
+
+.poster-type {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 14px;
+    color: #ffffff;
+    max-width: min-content;
+    max-height: min-content;
+    padding: 7px 10px 6px 10px;
+    margin: 0 50px 0 24px;
+    background-color: #000000;
+    clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 5px, 100% 100%, 0 100%)
+}
+
+.poster-btns {
+    margin-top: 25px
+}
+
+.poster-btns .more-btn {
+    font-size: 12px;
+    line-height: 12px;
+    width: 113px;
+    height: 40px;
+}
+
+.poster-btns .arrow-btn {
+    width: 46px;
+    height: 40px;
+}
+
+
+.poster-item-backside {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 63%, 4% 58%, 0 53%, 0 26%, 4% 21%, 0 16%);
+    position: relative;
+    height: 430px;
+    width: 270px;
+    background-color: black;
+}
+
+.backside-close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 45px;
+    min-height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 19px 100%, 0% calc(100% - 7px));
+}
+.backside-close-btn:hover {
+    background-color: #f74435;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.backside-title {
+    color: white;
+    padding: 33px 10px 24px 24px;
+}
+
+.backside-date {
+    clip-path: polygon(calc(100% - 19px) 0%, 100% 7px, 100% 100%, 0 100%, 0 0);
+    color: #000000;
+    background-color: white;
+    width: 98px;
+    height: 27px;
+    margin-left: 24px;
+    font-family: "Muller900", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    text-align: left;
+
+}
+
+.backside-time-container {
+    margin: 0 0 32px 24px;
+    flex-wrap: wrap;
+}
+
+.backside-time {
+    clip-path: polygon(calc(100% - 19px) 0%, 100% 7px, 100% 100%, 0 100%, 0 0);
+    width: 64px;
+    height: 32px;
+    margin-right: 18px;
+    margin-top: 18px;
+    background: #ffffff;
+    color: white
+}
+.backside-time-inner:hover {
+    background: #f74435;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.backside-time-inner {
+    clip-path: polygon(calc(100% - 19px) 0%, 100% 7px, 100% 100%, 0 100%, 0 0);
+    width: 60px;
+    height: 28px;
+    background: #000000;
+    font-family: "Muller900", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    text-align: center;
+    color: white;
+}
+.arrow-btn {
+    position: relative;
+}
+
+.image {
+    width: 17px;
+    height: 17px;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 12px;
+    left: 13px;
+}
+
+.original-image {
+    opacity: 1;
+}
+
+.hover-image {
+    opacity: 0;
+}
+
+.poster-btns:hover .original-image {
+    opacity: 0;
+}
+
+.poster-btns:hover .hover-image {
+    opacity: 1;
+}
+
+
+
+
+
+@media (min-width: 1375px) {
+    .scroll-content{
+        justify-content: space-between;
+    }
+    .scroll-item{
+        margin-right: 0
+    }
+}
+@media (max-width: 768px) {
+
+    .poster-title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .scroll-item {
+        height: 366px;
+        width: 227px;
+    }
+
+    .poster-item-content {
+        height: 366px;
+        width: 227px;
+    }
+
+    .poster-top {
+        top: 17px;
+        width: 227px;
+    }
+
+    .poster-bottom {
+        bottom: 20px;
+        width: 227px;
+    }
+
+    .poster-img {
+        width: 227px;
+        height: 138px;
+    }
+}
+
+@media (max-width: 768px) {
+    .poster-item-content {
+        padding-top: 17px;
+        padding-bottom: 20px;
+        clip-path: polygon(100% 0, 100% calc(100% - 101px), calc(100% - 9px) calc(100% - 80px), 100% calc(100% - 58px), 100% 100%, 0 100%, 0 0);
+    }
+}
+
+@media (min-width: 1386px) {
+    .scroll-controls-poster {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .poster-phone{
+        width: 300px;
+    }
+    .poster-header h2 {
+        order: 1;
+    }
+
+    .poster-header .poster-phone {
+        order: 3;
+    }
+
+    .poster-header .watch-all-btn {
+        order: 2;
+        margin-top: 12px;
+    }
+}
+@media (min-width: 600px){
+    .poster-phone{
+        white-space: nowrap;
+        width: 1px;
+    }
+}

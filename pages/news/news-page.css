@@ -1,0 +1,213 @@
+.doc-el{
+    clip-path: polygon(10% 0, 12% 13%, 14% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+.back-button{
+    width: 177px;
+    height: 40px;
+    gap: 8px;
+    clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%, 0 13%);
+    background: #000000;
+    color: white;
+    font-family: "Muller700", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+.back-button:hover{
+    background: #f74435;
+}
+.news-link{
+    font-family: "Muller400", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+.news-link:hover {
+    color: #f74435;
+    border-bottom: 1px solid #f74435;
+}
+.doc-container{
+    margin: 24px 30px 24px 30px;
+}
+.pdf-img{
+    clip-path: polygon(87% 0, 100% 12%, 100% 100%, 0 100%, 0 0);
+    width: 152px;
+    height: 170px;
+}
+.doc-text{
+    font-family: "Muller700", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+.downl-btn-container{
+    gap: 30px
+}
+.download-btn{
+    clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+    width: 108px;
+    height: 40px;
+    font-family: "Muller700", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    color: white;
+    text-transform: uppercase;
+    background: black;
+}
+.download-btn:hover{
+    background: #f74435;
+}
+.size{
+    font-family: "Muller700", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: left;
+
+}
+.content-text-link {
+color: #f74435;
+border-bottom: 1px solid #f74435;
+}
+
+.float-image {
+    float: right;
+    margin: 0 0 33px 31px;
+}
+
+.content p {
+    font-family: "Muller400", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+.newspage-news-container .news-item {
+    background: white
+}
+
+.newspage-news-container .news-item:hover {
+    background: #f74435;
+}
+.first-newspage-elements {
+    margin-top: 58px;
+    margin-bottom: 92px;
+}
+.element-events,
+.element-events-hover {
+    font-family: "Muller700", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.element-events-hover {
+    color: #f74435;
+}
+
+.accessibility-img-news path {
+    fill: #f74435;
+}
+
+.newspage-button-element {
+    margin-right: 20px;
+    font-family: "Muller700", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 16px 20px 12px 20px;
+    clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%, 0 17%);
+}
+.dark-social-media img {
+    filter: brightness(0.1);
+
+}
+.backside-time-newspage .backside-time {
+    background: black
+}
+.backside-time-newspage .backside-time-inner {
+    background: white;
+    color: black
+}
+
+.custom-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: "Muller400", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+
+}
+.custom-list li::before {
+    content: "■";
+    font-size: 1.5em;
+    color: #f74435;
+    margin-right: 0.5em;
+}
+
+
+.custom-numbered-list {
+    font-family: "Muller400", sans-serif;
+    list-style-type: none;
+    counter-reset: list-counter;
+    padding-left: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+.custom-numbered-list li::before {
+    content: counter(list-counter) ".";
+    counter-increment: list-counter;
+    color: #f74435;
+    margin-right: 0.5em;
+    font-family: "Muller800", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 18px;
+    text-align: left;
+
+}
+.custom-list-item{
+    margin-top: 20px;
+}
+
+.table-outside {
+    clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%, 0 7%);
+    background: #E0E0E0;
+    padding: 5px;
+    margin-bottom: 83px;
+}
+
+table {
+    clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%, 0 7%);
+    border-collapse: collapse;
+    background: #f2f2f2;
+    width: 100%;
+    height: 100%;
+}
+
+th, td {
+    border: 2px solid #E0E0E0;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.number-column {
+    text-align: center;
+}
