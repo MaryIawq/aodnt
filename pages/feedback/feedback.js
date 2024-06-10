@@ -19,17 +19,34 @@ $(document).ready(function() {
             if (!valid) isValid = false;
         });
 
-        if (!isValid) {
-            createErrorMessages(fields);
-        }
-
         if (isValid) {
-            Swal.fire({
-                title: "Успех!",
-                text: "Данные успешно отправлены!",
-                icon: "success"
-            }).then(() => {
-                $('#feedbackForm')[0].reset();
+            $.ajax({
+                url: 'feedback.php',
+                method: 'POST',
+                data: {
+                    secondName: $('#secondName').val(),
+                    firstName: $('#firstName').val(),
+                    surname: $('#surname').val(),
+                    email: $('#email').val(),
+                    phone: $('#phone').val()
+                },
+                success: function(response) {
+                    Swal.fire({
+                        title: "Успех!",
+                        text: "Данные успешно отправлены!",
+                        icon: "success"
+                    }).then(() => {
+                        $('#feedbackForm')[0].reset();
+                        clearFieldStates(fields);
+                    });
+                },
+                error: function(xhr, status, error) {
+                    Swal.fire({
+                        title: "Ошибка",
+                        text: "Произошла ошибка при отправке данных. Попробуйте еще раз.",
+                        icon: "error"
+                    });
+                }
             });
         }
     });
@@ -37,27 +54,18 @@ $(document).ready(function() {
     function updateFieldState(fieldId, errorId, isValid, errorMessage) {
         if (!isValid) {
             $(fieldId).addClass('error');
-            $(errorId).text(errorMessage).show();
+            $(errorId).addClass('error-msg');
         } else {
             $(fieldId).removeClass('error');
-            $(errorId).hide();
+            $(errorId).removeClass('error-msg');
         }
     }
 
-    function createErrorMessages(fields) {
+    function clearFieldStates(fields) {
         fields.forEach(field => {
-            if (!isValidField(field.id)) {
-                $('<span>', {
-                    id: field.errorId.substring(1),
-                    class: 'error-msg',
-                    text: field.errorMessage
-                }).insertAfter(field.id);
-            }
+            $(field.id).removeClass('error');
+            $(field.errorId).removeClass('error-msg');
         });
-    }
-
-    function isValidField(fieldId) {
-        return !$(fieldId).hasClass('error');
     }
 
     function isValidEmail(email) {

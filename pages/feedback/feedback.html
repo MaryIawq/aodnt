@@ -164,27 +164,29 @@
             <legend class="feedback-form__legend">Укажите вашу фамилию, имя и отчество:</legend>
             <label class="feedback-form__label" for="secondName">Фамилия:</label>
             <input class="feedback-form__input feedback-form__input--surname" id="secondName" type="text" placeholder="Фамилия">
+            <span id="secondNameError" class="">Введите фамилию</span>
 
             <label class="feedback-form__label" for="firstName">Имя:</label>
             <input class="feedback-form__input feedback-form__input--name" id="firstName" type="text" placeholder="Имя">
+            <span id="firstNameError" class="">Введите имя</span>
 
             <label class="feedback-form__label" for="surname">Отчество:</label>
             <input class="feedback-form__input feedback-form__input--patronymic" id="surname" type="text" placeholder="Отчество">
-
+            <span id="surnameError" class="">Введите отчество</span>
         </fieldset>
         <fieldset class="feedback-form__fieldset">
             <legend class="feedback-form__legend">Укажите контактную информацию:</legend>
             <label class="feedback-form__label" for="email">Почта:</label>
             <input class="feedback-form__input feedback-form__input--email" id="email" type="email" placeholder="Почта">
+            <span id="emailError" class="">Введите действительный email</span>
 
             <label class="feedback-form__label" for="phone">Телефон:</label>
-            <input class="feedback-form__input feedback-form__input--phone" id="phone" type="tel" placeholder="Телефон">
-
+            <input class="feedback-form__input feedback-form__input--phone" id="phone" type="tel" placeholder="89999999999">
+            <span id="phoneError" class="">Введите действительный телефон</span>
         </fieldset>
         <button type="submit" class="feedback-form__button feedback-form__button--submit">Отправить</button>
     </form>
 </div>
-
 
 
 

@@ -100,12 +100,17 @@
     background: rgba(247, 68, 53, 0.18);
     border: 1px solid #c80000;
 }
+
+span{
+    display: none;
+}
 .error-msg {
     color: #da0b0b;
+    display: block;
+    font-family: 'Muller400', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }
 .error-msg::before {
     content: '!';
-    font-family: 'Muller700', Arial, sans-serif;
-    font-weight: 700;
-    font-size: 35px;
 }
