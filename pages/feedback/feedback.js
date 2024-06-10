@@ -21,7 +21,7 @@ $(document).ready(function() {
 
         if (isValid) {
             $.ajax({
-                url: 'feedback.php',
+                url: './feedback.php',
                 method: 'POST',
                 data: {
                     secondName: $('#secondName').val(),
