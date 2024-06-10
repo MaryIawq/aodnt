@@ -1,6 +1,5 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Получаем данные из формы
     $secondName = $_POST['secondName'];
     $firstName = $_POST['firstName'];
     $surname = $_POST['surname'];
@@ -14,5 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     fwrite($file, $data);
 
     fclose($file);
+} else {
+    echo "405 Method not allowed";
 }
 ?>
